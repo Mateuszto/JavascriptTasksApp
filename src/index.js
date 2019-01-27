@@ -14,8 +14,7 @@ if (localStorage.hasOwnProperty('name')) {
 }
 
 
-const welcomeUser = (e) => {
-    e.preventDefault();
+const welcomeUser = () => {
 
     if (welcomeInput.value === "") {
         return false
@@ -29,31 +28,38 @@ const welcomeUser = (e) => {
 
 //Change avatar
 const mainAvatar = document.querySelector('.main--avatar');
-
 const avatarOne = document.querySelector('.change--avatarOne');
 const avatarTwo = document.querySelector('.change--avatarTwo');
 const placeHolderAvatar = document.querySelector('.placeholderAvatar');
 
+const pickedOne = 'firstAvatar'
+const pickedTwo = 'secAvatar'
+
+const avatarSection = document.querySelector('.change--avatar');
+
+
+
+if ((localStorage.hasOwnProperty('avatarFirst'))) {
+    mainAvatar.style.backgroundImage = "url('images/avatar1.jpg')";
+    placeHolderAvatar.classList.add("unActive");
+    avatarSection.classList.add('unActive')
+} else if ((localStorage.hasOwnProperty('avatarSec'))) {
+    mainAvatar.style.backgroundImage = "url('images/avatar2.png')";
+    placeHolderAvatar.classList.add("unActive");
+    avatarSection.classList.add('unActive')
+}
+
 avatarOne.addEventListener('click', function () {
     mainAvatar.style.backgroundImage = "url('images/avatar1.jpg')";
     placeHolderAvatar.classList.add("unActive");
-
-    // const avatarFirst = document.createElement("img");
-    // avatarFirst.setAttribute("src", 'images/avatar1.jpg');
-
-    // localStorage.setItem('avatar', avatarFirst)
-    // mainAvatar.style.backgroundImage = localStorage.getItem('avatar');
+    localStorage.setItem('avatarFirst', pickedOne)
+    avatarSection.classList.add('unActiveOpacity')
 })
 avatarTwo.addEventListener('click', function () {
     mainAvatar.style.backgroundImage = "url('images/avatar2.png')";
     placeHolderAvatar.classList.add("unActive");
+    localStorage.setItem('avatarSec', pickedTwo)
+    avatarSection.classList.add('unActiveOpacity')
 })
-
-
-
-
-
-
-
 
 welcomeForm.addEventListener('submit', welcomeUser);
