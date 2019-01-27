@@ -1,0 +1,59 @@
+.welcome--page
+    transition: .5s
+    height: 100vh
+    width: 100%
+    position: relative
+    background-image: linear-gradient(to top right, $purpleWelcome, $pinkWelcome)
+    .welcome--form
+        height: 38px
+        width: 350px
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        display: flex
+        .welcome--input
+            height: 36px
+            width: 225px
+            font-size: 18px
+            padding-left: 8px
+            outline: none
+            border: none
+        .welcome--btn
+            cursor: pointer
+            font-weight: 600
+            font-size: 18px
+            outline: none
+            border: none
+            width: 125px
+            height: 36px
+            background-color: $button
+            color: white
+
+.unactiveForm
+    opacity: 0
+    pointer-events: none;
+
+
+@media (max-width: 374px)
+    .welcome--page
+        position: absolute
+        left: 0
+        top: 0
+        height: 600px
+        width: 100%
+        .welcome--form
+            flex-direction: column
+            align-items: center
+            width: 100%
+            height: 120px
+            .welcome--input
+                width: 190px
+            .welcome--btn
+                width: 130px
+@media (min-width: 778px)
+    .welcome--page
+        .welcome--form
+            .welcome--btn
+                &:hover
+                    background-color: #760f7f
