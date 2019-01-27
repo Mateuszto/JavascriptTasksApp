@@ -26,4 +26,34 @@ const welcomeUser = (e) => {
     }
 }
 
+
+//Change avatar
+const mainAvatar = document.querySelector('.main--avatar');
+
+const avatarOne = document.querySelector('.change--avatarOne');
+const avatarTwo = document.querySelector('.change--avatarTwo');
+const placeHolderAvatar = document.querySelector('.placeholderAvatar');
+
+avatarOne.addEventListener('click', function () {
+    mainAvatar.style.backgroundImage = "url('images/avatar1.jpg')";
+    placeHolderAvatar.classList.add("unActive");
+
+    // const avatarFirst = document.createElement("img");
+    // avatarFirst.setAttribute("src", 'images/avatar1.jpg');
+
+    // localStorage.setItem('avatar', avatarFirst)
+    // mainAvatar.style.backgroundImage = localStorage.getItem('avatar');
+})
+avatarTwo.addEventListener('click', function () {
+    mainAvatar.style.backgroundImage = "url('images/avatar2.png')";
+    placeHolderAvatar.classList.add("unActive");
+})
+
+
+
+
+
+
+
+
 welcomeForm.addEventListener('submit', welcomeUser);

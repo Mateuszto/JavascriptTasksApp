@@ -3,10 +3,69 @@
     z-index: -1
     top: 0
     left: 0
-    height: 100vh
+    height: 1080px
     width: 100%
     background-image: linear-gradient(to top right, $grayFirst, $graySec)
+        
+.main--wrapper
+    height: 700px
+    width: 420px
+    background-color: $grayPurp
+    box-shadow: 0 0 40px $shadow
+    position: relative
+    left: 50%
+    top: 40%
+    transform: translate(-50%, -50%)
+    display: flex
+    flex-direction: column
+    align-items: center
+    .main--avatar
+        margin-top: 15px
+        cursor: pointer
+        height: 90px
+        width: 90px
+        border-radius: 50%
+        line-height: 90px
+        text-align: center   
+        color: $fontColor
+        background-color: $graySec
     .main--nick
+        margin-top: 10px
         color: white
         font-size: 22px
-        
+
+
+.change--avatar
+    width: 360px
+    height: 170px
+    background-color: $grayPurp
+    position: absolute
+    bottom: 50px
+    left: 50%
+    transform: translateX(-50%)
+    h5
+        color: white
+        text-align: center
+        margin-top: 8px
+    .change--avatarOne
+        cursor: pointer
+        width: 90px
+        height: 90px
+        border-radius: 50%
+    .change--avatarTwo
+        cursor: pointer
+        width: 90px
+        height: 90px
+        border-radius: 50%
+.change--wrapper
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    width: 290px
+    height: 140px
+    display: flex
+    align-items: center
+    justify-content: space-around
+
+.unActive
+    display: none
