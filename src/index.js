@@ -9,7 +9,7 @@ let showNick = document.querySelector('.main--nick');
 
 
 if (localStorage.hasOwnProperty('name')) {
-    sectionWelcome.classList.add('unactiveForm');
+    sectionWelcome.classList.add('loggedForm');
     showNick.textContent = localStorage.getItem('name');
 }
 
