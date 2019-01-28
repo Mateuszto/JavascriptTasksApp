@@ -10,7 +10,7 @@
 .main--wrapper
     height: 700px
     width: 360px
-    background-color: $grayPurp
+    background-color: $black
     box-shadow: 0 0 40px $shadow
     position: relative
     left: 50%
@@ -105,6 +105,30 @@
             border: none
             background-color: $grayNote
             color: $grayTitles
+
+.main--task
+    cursor: pointer
+    width: 100%
+    height: 140px
+    margin-top: 20px
+    background-color: $black
+    .main--task--title
+        color: $grayTitles
+        font-size: 18px
+        padding: 8px 0 0 8px
+        font-weight: 600
+    .main--task--description
+        color: $grayTitles
+        padding: 8px 0 8px 8px
+    .main--task--progress
+        color: $orange
+        padding: 8px 0 8px 8px
+        font-weight: 600
+
+.main--footer
+    width: 100%
+    height: 86px
+    background-color: $orange
 
 .unActiveOpacity
     opacity: 0
