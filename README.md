@@ -4,20 +4,52 @@
 
 
 ## **Todo**
-⬜️| Nope
-✅| Yep
-
-### 🌃 **Design**
+✅| Done     ❗    ⬜️| Todo
+## 🌃 **Design**
 
 ✅ PSD Project  
   ✅ Code first page  
     ✅ Code main page  
       ⬜️ Responsive Task-Quiz  
    
-### 🌆 **Content**
+## 🌆 **Content**
 
 ✅ Tasks - Levels  
   ⬜️ All questions
   
-### ⚒ **Features**
+## ⚒ **Features**
+✅ Local Storages  
+  ✅ Save nickname  
+    ✅ Choose and save avatar  
+      ✅ Notebook  
+        ⬜️ Progress bar  
+          ⬜️ Window with questions  
+            ⬜️ Support window  
+              ⬜️ Certificate - Make Psd and link to download
+                ⬜️ Logic - Fix some bugs
+
+
+
+
+#### **Support**
+🔜 🔜 🔜
+
+
+
+## **Install**
+```sh
+$ npm install
+```
+## **build**
+```sh
+$ npm run build 
+```
+## **Run**
+```sh
+$ npm run dev
+```
+
+```sh
+http://localhost:8080/
+```
 
