@@ -47,7 +47,7 @@ if ((localStorage.hasOwnProperty('avatarFirst'))) {
     mainAvatar.style.backgroundImage = "url('images/avatar2.png')";
     placeHolderAvatar.classList.add("unActive");
     avatarSection.classList.add('unActive')
-}
+} else console.log('Error - ChooseAvatar');
 
 avatarOne.addEventListener('click', function () {
     mainAvatar.style.backgroundImage = "url('images/avatar1.jpg')";
@@ -61,5 +61,10 @@ avatarTwo.addEventListener('click', function () {
     localStorage.setItem('avatarSec', pickedTwo)
     avatarSection.classList.add('unActiveOpacity')
 })
-
+//Login listener
 welcomeForm.addEventListener('submit', welcomeUser);
+
+//Wallet
+const walletValue = document.querySelector('.walletValue');
+let startingValue = 200;
+walletValue.textContent = startingValue;
