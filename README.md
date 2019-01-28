@@ -7,4 +7,17 @@
 ⬜️| Nope
 ✅| Yep
 
-### 🌃 ## **Design**
+### 🌃 **Design**
+
+✅ PSD Project  
+  ✅ Code first page  
+    ✅ Code main page  
+      ⬜️ Responsive Task-Quiz  
+   
+### 🌆 **Content**
+
+✅ Tasks - Levels  
+  ⬜️ All questions
+  
+### ⚒ **Features**
+
