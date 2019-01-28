@@ -3,7 +3,7 @@
     z-index: -1
     top: 0
     left: 0
-    height: 1080px
+    height: 1380px
     width: 100%
     background-image: linear-gradient(to top right, $grayFirst, $graySec)
         
@@ -40,7 +40,7 @@
     height: 170px
     background-color: $grayPurp
     position: absolute
-    bottom: 160px
+    top: 750px
     left: 50%
     transform: translateX(-50%)
     h5
@@ -70,6 +70,41 @@
     display: flex
     align-items: center
     justify-content: space-around
+
+.main--notebook
+    height: 400px
+    width: 100%
+    position: absolute
+    bottom: 0
+    left: 0
+    h3
+        color: $grayTitles
+        padding-bottom: 22px
+        padding-left: 20px
+    .save--notes
+        outline: none
+        border: none
+        width: 130px
+        height: 40px
+        background-color: $orange
+        font-size: 24px
+        font-weight: 600
+        color: white
+        margin-left: 20px
+    .main--notebook--text
+        width: 100%
+        height: 360px
+        background-color: $grayNote
+        .main--notes
+            font-size: 18px
+            padding-top: 10px
+            padding-left: 20px
+            height: 360px
+            width: 100%
+            outline: none
+            border: none
+            background-color: $grayNote
+            color: $grayTitles
 
 .unActiveOpacity
     opacity: 0

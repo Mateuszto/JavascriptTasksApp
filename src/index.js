@@ -63,3 +63,13 @@ avatarTwo.addEventListener('click', function () {
 })
 //Login listener
 welcomeForm.addEventListener('submit', welcomeUser);
+
+//Notes
+
+const notesText = document.querySelector('.main--notes');
+const saveButton = document.querySelector('.save--notes');
+
+saveButton.addEventListener('click', function () {
+    localStorage.setItem('notes', notesText.value);
+})
+notesText.value = localStorage.getItem('notes');
