@@ -63,8 +63,3 @@ avatarTwo.addEventListener('click', function () {
 })
 //Login listener
 welcomeForm.addEventListener('submit', welcomeUser);
-
-//Wallet
-const walletValue = document.querySelector('.walletValue');
-let startingValue = 200;
-walletValue.textContent = startingValue;
