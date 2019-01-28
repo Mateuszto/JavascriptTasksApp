@@ -25,7 +25,7 @@
         ⬜️ Progress bar  
           ⬜️ Window with questions  
             ⬜️ Support window  
-              ⬜️ Certificate - Make Psd and link to download
+              ⬜️ Certificate - Make Psd and link to download  
                 ⬜️ Logic - Fix some bugs
 
 
