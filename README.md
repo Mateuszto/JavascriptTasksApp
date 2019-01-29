@@ -5,7 +5,7 @@
 **January 2019**
 
 ## **Todo**
-✅| Done     ❗    ⬜️| Todo
+
 ## 🌃 **Design**
 
 ✅ PSD Project  
