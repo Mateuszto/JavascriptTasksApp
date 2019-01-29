@@ -32,13 +32,13 @@
 
 
 # 💾 **Tech**
-* Javascript
-* HTML5
-* Sass
-* Webpack
-* Babel
-* Localstorage
-* Git
+* **Javascript**
+* **HTML5**
+* **Sass**
+* **Webpack**
+* **Babel**
+* **Localstorage**
+* **Git** 
 
 #### **Support**
 🔜 🔜 🔜
