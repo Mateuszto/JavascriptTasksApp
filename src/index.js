@@ -73,3 +73,13 @@ saveButton.addEventListener('click', function () {
     localStorage.setItem('notes', notesText.value);
 })
 notesText.value = localStorage.getItem('notes');
+
+//Level - Beginner
+const beginnerSection = document.querySelector('#main--task--one');
+
+const showTasksBeginner = () => {
+    const popupBeginner = document.querySelector('.popup--beginner');
+    popupBeginner.classList.add('activePopup')
+}
+
+beginnerSection.addEventListener('click', showTasksBeginner);

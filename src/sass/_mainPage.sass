@@ -38,7 +38,8 @@
 .change--avatar
     width: 360px
     height: 170px
-    background-color: $grayPurp
+    background-color: $black
+    box-shadow: 0 0 32px $orange
     position: absolute
     top: 750px
     left: 50%
@@ -151,3 +152,12 @@
     pointer-events: none;
 .unActive
     display: none
+
+@media (min-width: 720px)
+    .main--wrapper
+        margin-top: 30px
+        height: 660px
+        width: 660px
+    .main--task
+        .main--task--description
+            padding-right: 36px
