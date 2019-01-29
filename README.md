@@ -2,7 +2,7 @@
 <p align="center">📚 For beginners 📚</p>
 <p align="center">(｡◕‿‿◕｡)</p>
 
-*** January 2019 ***
+**January 2019**
 
 ## **Todo**
 ✅| Done     ❗    ⬜️| Todo
