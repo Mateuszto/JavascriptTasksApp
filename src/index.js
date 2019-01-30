@@ -83,3 +83,27 @@ const showTasksBeginner = () => {
 }
 
 beginnerSection.addEventListener('click', showTasksBeginner);
+
+//Quiz section
+const checkQuestions = document.querySelector('.popup--questions--form');
+const progressSpan = document.querySelector('.progress--procent--beginner');
+
+const checkQuestionsFunction = (e) => {
+    e.preventDefault();
+    const resultBeginner = document.querySelector('.progress-procent--beginner');
+    const answerOne = document.querySelector('#correctOne');
+    const answerTwo = document.querySelector('#correctTwo');
+    let progressProcent = 0;
+
+    //Else if doesn't work..? {I WILL BACK FOR IT!}
+
+    if (answerOne.checked) {
+        progressProcent += 20;
+    }
+    if (answerTwo.checked) {
+        progressProcent += 20;
+    }
+    alert(`Result: ${progressProcent}`);
+}
+
+checkQuestions.addEventListener('submit', checkQuestionsFunction);
