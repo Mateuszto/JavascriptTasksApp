@@ -5,7 +5,7 @@ const welcomeInput = document.querySelector('.welcome__page--input');
 const welcomeForm = document.querySelector('.welcome__page--form');
 
 let nickName = welcomeInput.value;
-let showNick = document.querySelector('.main--nick');
+let showNick = document.querySelector('.main__page--nick');
 
 
 if (localStorage.hasOwnProperty('name')) {
@@ -27,15 +27,15 @@ const welcomeUser = () => {
 
 
 //Change avatar
-const mainAvatar = document.querySelector('.main--avatar');
-const avatarOne = document.querySelector('.change--avatarOne');
-const avatarTwo = document.querySelector('.change--avatarTwo');
+const mainAvatar = document.querySelector('.main__page--avatar');
+const avatarOne = document.querySelector('.change__avatar--one');
+const avatarTwo = document.querySelector('.change__avatar--two');
 const placeHolderAvatar = document.querySelector('.placeholderAvatar');
 
 const pickedOne = 'firstAvatar'
 const pickedTwo = 'secAvatar'
 
-const avatarSection = document.querySelector('.change--avatar');
+const avatarSection = document.querySelector('.change__avatar');
 
 
 
@@ -66,8 +66,8 @@ welcomeForm.addEventListener('submit', welcomeUser);
 
 //Notes
 
-const notesText = document.querySelector('.main--notes');
-const saveButton = document.querySelector('.save--notes');
+const notesText = document.querySelector('.main__notebook--notes');
+const saveButton = document.querySelector('.save__notes');
 
 saveButton.addEventListener('click', function () {
     localStorage.setItem('notes', notesText.value);
@@ -75,7 +75,7 @@ saveButton.addEventListener('click', function () {
 notesText.value = localStorage.getItem('notes');
 
 //Level - Beginner
-const beginnerSection = document.querySelector('#main--task--one');
+const beginnerSection = document.querySelector('#main__task--one');
 
 const showTasksBeginner = () => {
     const popupBeginner = document.querySelector('.popup__beginner');
@@ -86,21 +86,17 @@ beginnerSection.addEventListener('click', showTasksBeginner);
 
 //Quiz section
 const checkQuestions = document.querySelector('.popup__beginner--form');
-const progressSpan = document.querySelector('.progress--procent--beginner');
+const progressSpan = document.querySelector('.progress__procent--beginner');
 
 const checkQuestionsFunction = (e) => {
     e.preventDefault();
     const resultBeginner = document.querySelector('.progress-procent--beginner');
     const answerOne = document.querySelector('#correctOne');
-    const answerTwo = document.querySelector('#correctTwo');
     let progressProcent = 0;
 
     //Else if doesn't work..? {I WILL BACK FOR IT!}
 
     if (answerOne.checked) {
-        progressProcent += 20;
-    }
-    if (answerTwo.checked) {
         progressProcent += 20;
     }
     alert(`Result: ${progressProcent}`);

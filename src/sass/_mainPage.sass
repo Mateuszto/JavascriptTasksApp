@@ -19,7 +19,7 @@
     display: flex
     flex-direction: column
     align-items: center
-    .main--avatar
+    .main__page--avatar
         margin-top: 15px
         cursor: pointer
         height: 80px
@@ -30,12 +30,12 @@
         color: $fontColor
         background-color: $graySec
         border: 2px solid $orange
-    .main--nick
+    .main__page--nick
         margin-top: 10px
         color: white
         font-size: 22px
 
-.change--avatar
+.change__avatar
     width: 360px
     height: 170px
     background-color: $black
@@ -48,21 +48,21 @@
         color: white
         text-align: center
         margin-top: 8px
-    .change--avatarOne
+    .change__avatar--one
         cursor: pointer
         width: 90px
         height: 90px
         border-radius: 50%
         &:hover
             border: 3px solid $orange
-    .change--avatarTwo
+    .change__avatar--two
         cursor: pointer
         width: 90px
         height: 90px
         border-radius: 50%
         &:hover
             border: 3px solid $orange
-.change--wrapper
+.change__avatar--wrapper
     position: absolute
     left: 50%
     transform: translateX(-50%)
@@ -72,7 +72,7 @@
     align-items: center
     justify-content: space-around
 
-.main--notebook
+.main__notebook
     height: 400px
     width: 100%
     position: absolute
@@ -82,7 +82,7 @@
         color: $grayTitles
         padding-bottom: 22px
         padding-left: 20px
-    .save--notes
+    .save__notes
         outline: none
         border: none
         width: 130px
@@ -95,11 +95,11 @@
         cursor: pointer
         &:hover
             background-color: #ff5100
-    .main--notebook--text
+    .main__notebook--text
         width: 100%
         height: 360px
         background-color: $grayNote
-        .main--notes
+        .main__notebook--notes
             font-size: 18px
             padding-top: 10px
             padding-left: 20px
@@ -111,7 +111,7 @@
             color: $grayTitles
             position: absolute
 
-.main--task
+.main__task
     cursor: pointer
     width: 100%
     height: 140px
@@ -119,20 +119,20 @@
     background-color: $black
     &:hover
         background-color: #212223
-    .main--task--title
+    .main__task--title
         color: $white
         font-size: 18px
         padding: 8px 0 0 8px
         font-weight: 600
-    .main--task--description
+    .main__task--description
         color: $grayTitles
         padding: 8px 8px 0 8px
-    .main--task--progress
+    .main__task--progress
         color: $orange
         padding: 8px 0 8px 8px
         font-weight: 600
 
-.main--footer
+.main__footer
     cursor: pointer
     width: 100%
     height: 86px
@@ -158,6 +158,6 @@
         margin-top: 30px
         height: 660px
         width: 660px
-    .main--task
-        .main--task--description
+    .main__task
+        .main__task--description
             padding-right: 36px
