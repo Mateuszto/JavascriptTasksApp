@@ -62,14 +62,31 @@
         border: 2px solid $orange
         color: $orange
 
+
 .activePopup
     display: block
+    
 @media (min-width: 720px)
     .popup--beginner
         height: 620px
         width: 700px
+        .popup--answers
+            width: 70%
 
 @media (max-width: 700px)
     .popup--question
         .popup--title--question
             font-size: 12px
+
+input[type="radio"]:checked:before 
+    content: ""
+    display: block
+    position: relative
+    z-index: 10
+    top: 3px
+    left: 3px
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    background: $orange
+
