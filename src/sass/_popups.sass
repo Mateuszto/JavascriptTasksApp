@@ -8,10 +8,26 @@
     position: fixed
     transform: translate(-50%, -50%)
     display: none
+    .popup--beginner--submit
+        outline: none
+        border: none
+        width: 130px
+        height: 40px
+        background-color: $orange
+        font-size: 24px
+        font-weight: 600
+        color: white
+        cursor: pointer
+        position: absolute
+        left: 50%
+        bottom: 10px
+        transform: translateX(-50%)
+        &:hover
+            background-color: #ff5100
+
 
 .activePopup
     display: block
-
 @media (min-width: 720px)
     .popup--beginner
         height: 620px
