@@ -1,8 +1,8 @@
 import './sass/style.sass'
 
-const sectionWelcome = document.querySelector('.welcome--page');
-const welcomeInput = document.querySelector('.welcome--input');
-const welcomeForm = document.querySelector('.welcome--form');
+const sectionWelcome = document.querySelector('.welcome__page');
+const welcomeInput = document.querySelector('.welcome__page--input');
+const welcomeForm = document.querySelector('.welcome__page--form');
 
 let nickName = welcomeInput.value;
 let showNick = document.querySelector('.main--nick');
@@ -78,14 +78,14 @@ notesText.value = localStorage.getItem('notes');
 const beginnerSection = document.querySelector('#main--task--one');
 
 const showTasksBeginner = () => {
-    const popupBeginner = document.querySelector('.popup--beginner');
+    const popupBeginner = document.querySelector('.popup__beginner');
     popupBeginner.classList.add('activePopup')
 }
 
 beginnerSection.addEventListener('click', showTasksBeginner);
 
 //Quiz section
-const checkQuestions = document.querySelector('.popup--questions--form');
+const checkQuestions = document.querySelector('.popup__beginner--form');
 const progressSpan = document.querySelector('.progress--procent--beginner');
 
 const checkQuestionsFunction = (e) => {

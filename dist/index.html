@@ -15,15 +15,76 @@
             <button type="submit" class="welcome--btn">CONNECT</button>
         </form>
     </section>
-
     <section class="main--page">
         <div class="main--wrapper">
+            <!-- Tasks - Popups -->
+            <div class="popup--beginner">
+                <form class="popup--questions--form">
+                    <div class="popup--question">
+                        <h3 class="popup--title--question">Where do you save 3.14 (PI)</h3>
+                        <div class="popup--answers">
+                            <label>
+                                <input type="radio" name="one" id="correctOne"> Const
+                            </label>
+                            <label>
+                                <input type="radio" name="one"> Var
+                            </label>
+                            <label>
+                                <input type="radio" name="one"> Let
+                            </label>
+                            <label>
+                                <input type="radio" name="one"> Int
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="popup--question">
+                        <h3 class="popup--title--question">How to show Popup window</h3>
+                        <div class="popup--answers">
+                            <label>
+                                <input type="radio" name="two"> msg();
+                            </label>
+                            <label>
+                                <input type="radio" name="two"> window();
+                            </label>
+                            <label>
+                                <input type="radio" name="two" id="correctTwo"> alert();
+                            </label>
+                            <label>
+                                <input type="radio" name="two"> alertBox();
+                            </label>
+                        </div>
+                    </div>
+                    <button class="popup--beginner--submit" type="submit">CHECK</button>
+                </form>
+            </div>
+            <!-- End Task Popups -->
             <div class="main--avatar">
                 <p class="placeholderAvatar">Avatar</p>
             </div>
             <p class="main--nick"></p>
+            <div class="main--task" id="main--task--one">
+                <p class="main--task--title">Beginner</p>
+                <p class="main--task--description">Beginner level, questions about language syntax, variables,
+                    functions and objects. To pass the test, get a minimum of 80%.</p>
+                <p class="main--task--progress">Progress: <span class="progress--procent--beginner">0%</span></p>
+            </div>
+            <div class="main--task">
+                <p class="main--task--title">Average</p>
+                <p class="main--task--description">Average level, questions on examples, DOM, Cookies, Local Storage
+                    and new ES6 functions. To pass the test, get a minimum of 60%.</p>
+                <p class="main--task--progress">Progress: <span class="progress--procent--average">0%</span></p>
+            </div>
+            <div class="main--task">
+                <p class="main--task--title">Advanced</p>
+                <p class="main--task--description">Advanced level, Webpack, Babel, OOP, by far the most difficult
+                    section. To pass the test, get a minimum of 60%</p>
+                <p class="main--task--progress">Progress: <span class="progress--procent--advanced">0%</span></p>
+            </div>
+            <div class="main--footer">
+                <p>SUPPORT ME</p>
+            </div>
         </div>
-
         <div class="change--avatar">
             <h5>CHOOSE AVATAR</h5>
             <div class="change--wrapper">
@@ -31,6 +92,14 @@
                 <img src="images/avatar2.png" alt="Avatar Two" class="change--avatarTwo">
             </div>
         </div>
+        <div class="main--notebook">
+            <h3>NOTEBOOK</h3>
+            <button type="button" class="save--notes">SAVE</button>
+            <div class="main--notebook--text">
+                <textarea class="main--notes"></textarea>
+            </div>
+        </div>
+        <div class="main--complet"></div>
     </section>
 <script type="text/javascript" src="bundle.js"></script></body>
 
