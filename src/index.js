@@ -81,12 +81,19 @@ const showTasksBeginner = () => {
     const popupBeginner = document.querySelector('.popup__beginner');
     popupBeginner.classList.add('activePopup')
 }
-
 beginnerSection.addEventListener('click', showTasksBeginner);
+
+// //Level - Average
+const averageSection = document.querySelector('#main__task--two');
+
+const showTasksAverage = () => {
+    const popupBeginner = document.querySelector('.popup__average');
+    popupBeginner.classList.add('activePopup')
+}
+averageSection.addEventListener('click', showTasksAverage);
 
 //Quiz section
 const checkQuestions = document.querySelector('.popup__beginner--form');
-const progressSpan = document.querySelector('.progress__procent--beginner');
 const resultBeginner = document.querySelector('.progress__procent--beginner');
 let progressProcent = 0;
 
@@ -104,10 +111,10 @@ const checkQuestionsFunction = () => {
     resultBeginner.textContent = `${localStorage.getItem('resultBeginner')}%`;
     popupBeginner.classList.remove('activePopup');
 }
-if(localStorage.getItem('resultBeginner') >= 80){
-    resultBeginner.style.color="green";
-} else{
-    resultBeginner.style.color="red";
+if (localStorage.getItem('resultBeginner') >= 80) {
+    resultBeginner.style.color = "green";
+} else {
+    resultBeginner.style.color = "red";
 }
 resultBeginner.textContent = `${localStorage.getItem('resultBeginner')}%`;
 checkQuestions.addEventListener('submit', checkQuestionsFunction);
