@@ -90,7 +90,7 @@ const progressSpan = document.querySelector('.progress__procent--beginner');
 
 const checkQuestionsFunction = (e) => {
     e.preventDefault();
-    const resultBeginner = document.querySelector('.progress-procent--beginner');
+    const resultBeginner = document.querySelector('.progress__procent--beginner');
     const correctAnswers = document.querySelectorAll('.correct');
     const correctAnswersArray = [...correctAnswers]
     let progressProcent = 0;
