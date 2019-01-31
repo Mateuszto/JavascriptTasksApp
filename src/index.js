@@ -87,23 +87,27 @@ beginnerSection.addEventListener('click', showTasksBeginner);
 //Quiz section
 const checkQuestions = document.querySelector('.popup__beginner--form');
 const progressSpan = document.querySelector('.progress__procent--beginner');
+const resultBeginner = document.querySelector('.progress__procent--beginner');
+let progressProcent = 0;
 
-const checkQuestionsFunction = (e) => {
-    e.preventDefault();
+const checkQuestionsFunction = () => {
     const popupBeginner = document.querySelector('.popup__beginner');
-    const resultBeginner = document.querySelector('.progress__procent--beginner');
     const correctAnswers = document.querySelectorAll('.correct');
     const correctAnswersArray = [...correctAnswers]
-    let progressProcent = 0;
 
-    for(let i=0; i<correctAnswersArray.length; i++){
-        if(correctAnswersArray[i].checked){
+    for (let i = 0; i < correctAnswersArray.length; i++) {
+        if (correctAnswersArray[i].checked) {
             progressProcent += 20;
         }
     }
-
+    localStorage.setItem('resultBeginner', progressProcent)
+    resultBeginner.textContent = `${localStorage.getItem('resultBeginner')}%`;
     popupBeginner.classList.remove('activePopup');
-    alert(`Result: ${progressProcent} %`);
 }
-
+if(localStorage.getItem('resultBeginner') >= 80){
+    resultBeginner.style.color="green";
+} else{
+    resultBeginner.style.color="red";
+}
+resultBeginner.textContent = `${localStorage.getItem('resultBeginner')}%`;
 checkQuestions.addEventListener('submit', checkQuestionsFunction);
