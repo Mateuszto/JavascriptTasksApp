@@ -90,6 +90,7 @@ const progressSpan = document.querySelector('.progress__procent--beginner');
 
 const checkQuestionsFunction = (e) => {
     e.preventDefault();
+    const popupBeginner = document.querySelector('.popup__beginner');
     const resultBeginner = document.querySelector('.progress__procent--beginner');
     const correctAnswers = document.querySelectorAll('.correct');
     const correctAnswersArray = [...correctAnswers]
@@ -101,6 +102,7 @@ const checkQuestionsFunction = (e) => {
         }
     }
 
+    popupBeginner.classList.remove('activePopup');
     alert(`Result: ${progressProcent} %`);
 }
 
