@@ -91,15 +91,17 @@ const progressSpan = document.querySelector('.progress__procent--beginner');
 const checkQuestionsFunction = (e) => {
     e.preventDefault();
     const resultBeginner = document.querySelector('.progress-procent--beginner');
-    const answerOne = document.querySelector('#correctOne');
+    const correctAnswers = document.querySelectorAll('.correct');
+    const correctAnswersArray = [...correctAnswers]
     let progressProcent = 0;
 
-    //Else if doesn't work..? {I WILL BACK FOR IT!}
-
-    if (answerOne.checked) {
-        progressProcent += 20;
+    for(let i=0; i<correctAnswersArray.length; i++){
+        if(correctAnswersArray[i].checked){
+            progressProcent += 20;
+        }
     }
-    alert(`Result: ${progressProcent}`);
+
+    alert(`Result: ${progressProcent} %`);
 }
 
 checkQuestions.addEventListener('submit', checkQuestionsFunction);

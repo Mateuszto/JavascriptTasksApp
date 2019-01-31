@@ -25,11 +25,12 @@
         height: 80px
         width: 80px
         border-radius: 50%
-        line-height: 90px
+        line-height: 80px
         text-align: center   
         color: $fontColor
         background-color: $graySec
         border: 2px solid $orange
+        overflow: hidden
     .main__page--nick
         margin-top: 10px
         color: white
@@ -50,15 +51,15 @@
         margin-top: 8px
     .change__avatar--one
         cursor: pointer
-        width: 90px
-        height: 90px
+        width: 80px
+        height: 80px
         border-radius: 50%
         &:hover
             border: 3px solid $orange
     .change__avatar--two
         cursor: pointer
-        width: 90px
-        height: 90px
+        width: 80px
+        height: 80px
         border-radius: 50%
         &:hover
             border: 3px solid $orange
@@ -131,7 +132,6 @@
         color: $orange
         padding: 8px 0 8px 8px
         font-weight: 600
-
 .main__footer
     cursor: pointer
     width: 100%
@@ -144,9 +144,6 @@
     line-height: 86px
     &:hover
         background-color: #ff5100
-
-
-
 .unActiveOpacity
     opacity: 0
     pointer-events: none;
@@ -154,10 +151,12 @@
     display: none
 
 @media (min-width: 720px)
-    .main--wrapper
+    .main__page--wrapper
         margin-top: 30px
-        height: 660px
         width: 660px
     .main__task
         .main__task--description
             padding-right: 36px
+    .change__avatar
+        margin-top: 28px
+
