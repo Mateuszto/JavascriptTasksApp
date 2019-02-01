@@ -11,12 +11,12 @@
 ✅ PSD Project  
   ✅ Code first page  
     ✅ Code main page  
-      ⬜️ Responsive Task-Quiz  
+      ✅ Responsive Task-Quiz  
    
 ## 🌆 **Content**
 
 ✅ Tasks - Levels  
-  ⬜️ All questions
+  ✅ All questions
   
 ## ⚒ **Features**
 ✅ Local Storages  
@@ -24,10 +24,10 @@
     ✅ Choose and save avatar  
       ✅ Notebook  
         ⬜️ Progress bar  
-          ⬜️ Window with questions  
+          ✅ Window with questions  
             ⬜️ Support window  
-              ⬜️ Certificate - Make Psd and link to download  
-                ⬜️ Logic - Fix some bugs
+              ✅ Certificate
+                ✅ Logic - Fix some bugs
 
 
 
@@ -39,6 +39,7 @@
 * **Babel**
 * **Localstorage**
 * **Git** 
+* **Responsive**
 
 #### **Support**
 🔜 🔜 🔜
