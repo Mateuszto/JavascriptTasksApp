@@ -83,14 +83,23 @@ const showTasksBeginner = () => {
 }
 beginnerSection.addEventListener('click', showTasksBeginner);
 
-// //Level - Average
+//Level - Average
 const averageSection = document.querySelector('#main__task--two');
 
 const showTasksAverage = () => {
-    const popupBeginner = document.querySelector('.popup__average');
-    popupBeginner.classList.add('activePopup')
+    const popupAverage = document.querySelector('.popup__average');
+    popupAverage.classList.add('activePopup')
 }
 averageSection.addEventListener('click', showTasksAverage);
+
+//Level - Advanced
+const advancedSection = document.querySelector('#main__task--three');
+
+const showTasksAdvanced = () => {
+    const popupAdvanced = document.querySelector('.popup__advanced');
+    popupAdvanced.classList.add('activePopup')
+}
+advancedSection.addEventListener('click', showTasksAdvanced);
 
 //Quiz section
 //Beginner
@@ -146,3 +155,41 @@ if (localStorage.getItem('resultAverage') >= 60) {
 }
 resultAverage.textContent = `${localStorage.getItem('resultAverage')}%`;
 checkQuestionsAverage.addEventListener('submit', checkQuestionsFunctionAverage);
+
+//Advanced
+const checkQuestionsAdvanced = document.querySelector('.popup__advanced--form');
+const resultAdvanced = document.querySelector('.progress__procent--advanced');
+let progressProcentAdvanced = 0;
+
+const checkQuestionsFunctionAdvanced = () => {
+    const popupAdvanced = document.querySelector('.popup__advanced');
+    const correctAnswers = document.querySelectorAll('.correct');
+    const correctAnswersArray = [...correctAnswers]
+
+    for (let i = 0; i < correctAnswersArray.length; i++) {
+        if (correctAnswersArray[i].checked) {
+            progressProcentAdvanced += 20;
+        }
+    }
+    localStorage.setItem('resultAdvanced', progressProcentAdvanced);
+    resultAdvanced.textContent = `${localStorage.getItem('resultAdvanced')}%`;
+    popupAdvanced.classList.remove('activePopup');
+}
+if (localStorage.getItem('resultAdvanced') >= 60) {
+    resultAdvanced.style.color = "green";
+} else {
+    resultAdvanced.style.color = "red";
+}
+resultAdvanced.textContent = `${localStorage.getItem('resultAdvanced')}%`;
+checkQuestionsAdvanced.addEventListener('submit', checkQuestionsFunctionAdvanced);
+
+//Null - Problem (Results - First visit)
+if (localStorage.hasOwnProperty('resultBeginner')) {} else {
+    resultBeginner.textContent = `0%`;
+}
+if (localStorage.hasOwnProperty('resultAverage')) {} else {
+    resultAverage.textContent = `0%`;
+}
+if (localStorage.hasOwnProperty('resultAdvanced')) {} else {
+    resultAdvanced.textContent = `0%`;
+}

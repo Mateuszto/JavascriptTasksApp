@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Javascript - Tasks - Practice</title>
 </head>
 
 <body>
@@ -27,13 +27,13 @@
                     functions and objects. To pass the test, get a minimum of 80%.</p>
                 <p class="main__task--progress">Progress: <span class="progress__procent--beginner">0%</span></p>
             </div>
-            <div class="main__task">
+            <div class="main__task" id="main__task--two">
                 <p class="main__task--title">Average</p>
                 <p class="main__task--description">Average level, questions on examples, DOM, Cookies, Local Storage
                     and new ES6 functions. To pass the test, get a minimum of 60%.</p>
                 <p class="main__task--progress">Progress: <span class="progress__procent--average">0%</span></p>
             </div>
-            <div class="main__task">
+            <div class="main__task" id="main__task--three">
                 <p class="main__task--title">Advanced</p>
                 <p class="main__task--description">Advanced level, Webpack, Babel, OOP, by far the most difficult
                     section. To pass the test, get a minimum of 60%</p>
@@ -97,61 +97,249 @@
                 </div>
 
                 <div class="popup__beginner--question">
-                    <h3 class="popup__beginner__title--question">Array function is..</h3>
+                    <h3 class="popup__beginner__title--question">Template string..</h3>
                     <div class="popup__beginner--answers">
                         <label>
-                            <input type="radio" name="three" class="correct"> ()=>{}
+                            <input type="radio" name="three"> ''
                         </label>
                         <label>
-                            <input type="radio" name="three"> =>()
+                            <input type="radio" name="three"> ""
                         </label>
                         <label>
-                            <input type="radio" name="three"> (){}
+                            <input type="radio" name="three" class="correct"> ``
                         </label>
                         <label>
-                            <input type="radio" name="three"> =({})
+                            <input type="radio" name="three"> ;;
                         </label>
                     </div>
                 </div>
 
                 <div class="popup__beginner--question">
-                    <h3 class="popup__beginner__title--question">Array function is..</h3>
+                    <h3 class="popup__beginner__title--question">How to add one to i = 0..</h3>
                     <div class="popup__beginner--answers">
                         <label>
-                            <input type="radio" name="four" class="correct"> ()=>{}
+                            <input type="radio" name="four"> i&&
                         </label>
                         <label>
-                            <input type="radio" name="four"> =>()
+                            <input type="radio" name="four"> i+i
                         </label>
                         <label>
-                            <input type="radio" name="four"> (){}
+                            <input type="radio" name="four"> i=+
                         </label>
                         <label>
-                            <input type="radio" name="four"> =({})
+                            <input type="radio" name="four" class="correct"> i++
                         </label>
                     </div>
                 </div>
 
                 <div class="popup__beginner--question">
-                    <h3 class="popup__beginner__title--question">Array function is..</h3>
+                    <h3 class="popup__beginner__title--question">Array is defined by..</h3>
                     <div class="popup__beginner--answers">
                         <label>
-                            <input type="radio" name="five" class="correct"> ()=>{}
+                            <input type="radio" name="five" class="correct"> []
                         </label>
                         <label>
-                            <input type="radio" name="five> =>()
+                            <input type="radio" name="five"> ()
                         </label>
                         <label>
-                            <input type="
-                                radio" name="five"> (){}
+                            <input type="radio" name="five"> @
                         </label>
                         <label>
-                            <input type="radio" name="five"> =({})
+                            <input type="radio" name="five"> {}
                         </label>
                     </div>
                 </div>
-
                 <button class="popup__beginner--submit" type="submit">CHECK</button>
+            </form>
+        </div>
+        <!-- Average -->
+        <div class="popup__average">
+            <form class="popup__average--form">
+                <div class="popup__average--question">
+                    <h3 class="popup__average__title--question">How to edit text in "p"..</h3>
+                    <div class="popup__average--answers">
+                        <label>
+                            <input type="radio" name="six"> p.text()
+                        </label>
+                        <label>
+                            <input type="radio" name="six" class="correct"> p.textContent
+                        </label>
+                        <label>
+                            <input type="radio" name="six"> p.msg()
+                        </label>
+                        <label>
+                            <input type="radio" name="six"> p.textIn
+                        </label>
+                    </div>
+                </div>
+
+                <div class="popup__average--question">
+                    <h3 class="popup__average__title--question">Add class - classList..</h3>
+                    <div class="popup__average--answers">
+                        <label>
+                            <input type="radio" name="seven" class="correct"> .add
+                        </label>
+                        <label>
+                            <input type="radio" name="seven"> .join
+                        </label>
+                        <label>
+                            <input type="radio" name="seven"> .include
+                        </label>
+                        <label>
+                            <input type="radio" name="seven"> .plus
+                        </label>
+                    </div>
+                </div>
+
+                <div class="popup__average--question">
+                    <h3 class="popup__average__title--question">How to check type..</h3>
+                    <div class="popup__average--answers">
+                        <label>
+                            <input type="radio" name="eight"> check
+                        </label>
+                        <label>
+                            <input type="radio" name="eight"> parseInt
+                        </label>
+                        <label>
+                            <input type="radio" name="eight"> type
+                        </label>
+                        <label>
+                            <input type="radio" name="eight" class="correct"> typeof
+                        </label>
+                    </div>
+                </div>
+
+                <div class="popup__average--question">
+                    <h3 class="popup__average__title--question">How to add item to array..</h3>
+                    <div class="popup__average--answers">
+                        <label>
+                            <input type="radio" name="nine"> add
+                        </label>
+                        <label>
+                            <input type="radio" name="nine"> unshift
+                        </label>
+                        <label>
+                            <input type="radio" name="nine"> shift
+                        </label>
+                        <label>
+                            <input type="radio" name="nine" class="correct"> push
+                        </label>
+                    </div>
+                </div>
+
+                <div class="popup__average--question">
+                    <h3 class="popup__average__title--question">How many items array have..</h3>
+                    <div class="popup__average--answers">
+                        <label>
+                            <input type="radio" name="ten"> long
+                        </label>
+                        <label>
+                            <input type="radio" name="ten" class="correct"> length
+                        </label>
+                        <label>
+                            <input type="radio" name="ten"> extended
+                        </label>
+                        <label>
+                            <input type="radio" name="ten"> far
+                        </label>
+                    </div>
+                </div>
+                <button class="popup__average--submit" type="submit">CHECK</button>
+            </form>
+        </div>
+        <!-- Advanced -->
+        <div class="popup__advanced">
+            <form class="popup__advanced--form">
+                <div class="popup__advanced--question">
+                    <h3 class="popup__advanced__title--question">How to edit text in "p"..</h3>
+                    <div class="popup__advanced--answers">
+                        <label>
+                            <input type="radio" name="eleven"> p.text()
+                        </label>
+                        <label>
+                            <input type="radio" name="eleven" class="correct"> p.textContent
+                        </label>
+                        <label>
+                            <input type="radio" name="eleven"> p.msg()
+                        </label>
+                        <label>
+                            <input type="radio" name="eleven"> p.textIn
+                        </label>
+                    </div>
+                </div>
+
+                <div class="popup__advanced--question">
+                    <h3 class="popup__advanced__title--question">Add class - classList..</h3>
+                    <div class="popup__advanced--answers">
+                        <label>
+                            <input type="radio" name="twelve" class="correct"> .add
+                        </label>
+                        <label>
+                            <input type="radio" name="twelve"> .join
+                        </label>
+                        <label>
+                            <input type="radio" name="twelve"> .include
+                        </label>
+                        <label>
+                            <input type="radio" name="twelve"> .plus
+                        </label>
+                    </div>
+                </div>
+
+                <div class="popup__advanced--question">
+                    <h3 class="popup__advanced__title--question">How to check type..</h3>
+                    <div class="popup__advanced--answers">
+                        <label>
+                            <input type="radio" name="thirteen"> check
+                        </label>
+                        <label>
+                            <input type="radio" name="thirteen"> parseInt
+                        </label>
+                        <label>
+                            <input type="radio" name="thirteen"> type
+                        </label>
+                        <label>
+                            <input type="radio" name="thirteen" class="correct"> typeof
+                        </label>
+                    </div>
+                </div>
+
+                <div class="popup__advanced--question">
+                    <h3 class="popup__advanced__title--question">How to add item to array..</h3>
+                    <div class="popup__advanced--answers">
+                        <label>
+                            <input type="radio" name="fourteen"> add
+                        </label>
+                        <label>
+                            <input type="radio" name="fourteen"> unshift
+                        </label>
+                        <label>
+                            <input type="radio" name="fourteen"> shift
+                        </label>
+                        <label>
+                            <input type="radio" name="fourteen" class="correct"> push
+                        </label>
+                    </div>
+                </div>
+
+                <div class="popup__advanced--question">
+                    <h3 class="popup__advanced__title--question">How many items array have..</h3>
+                    <div class="popup__advanced--answers">
+                        <label>
+                            <input type="radio" name="fifteen"> long
+                        </label>
+                        <label>
+                            <input type="radio" name="fifteen" class="correct"> length
+                        </label>
+                        <label>
+                            <input type="radio" name="fifteen"> extended
+                        </label>
+                        <label>
+                            <input type="radio" name="fifteen"> far
+                        </label>
+                    </div>
+                </div>
+                <button class="popup__advanced--submit" type="submit">CHECK</button>
             </form>
         </div>
         <!-- End Task Popups -->

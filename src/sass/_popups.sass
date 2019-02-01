@@ -1,4 +1,4 @@
-.popup__beginner, .popup__average
+.popup__beginner, .popup__average, .popup__advanced
     width: 330px
     height: 640px
     background-color: $shadow
@@ -8,7 +8,7 @@
     position: fixed
     transform: translate(-50%, -50%)
     display: none
-    .popup__beginner--submit, .popup__average--submit
+    .popup__beginner--submit, .popup__average--submit, .popup__advanced--submit
         outline: none
         border: none
         width: 130px
@@ -24,7 +24,7 @@
         transform: translateX(-50%)
         &:hover
             background-color: #ff5100
-    .popup__beginner--question, .popup__average--question
+    .popup__beginner--question, .popup__average--question, .popup__advanced--question
         margin-top: 42px
         position: relative
         width: 100%
@@ -32,11 +32,11 @@
         color: white
         display: flex
         align-items: center
-        .popup__beginner__title--question, .popup__average__title--question
+        .popup__beginner__title--question, .popup__average__title--question, .popup__advanced__title--question
             position: absolute
             left: 50%
             transform: translateX(-50%)
-.popup__beginner--answers, .popup__average--answers
+.popup__beginner--answers, .popup__average--answers, .popup__advanced--answers
     position: absolute
     top: 46px
     left: 50%
@@ -65,15 +65,15 @@
     display: block  
 
 @media (min-width: 720px)
-    .popup__beginner, .popup__average
+    .popup__beginner, .popup__average, .popup__advanced
         height: 620px
         width: 700px
-        .popup__beginner--answers, .popup__average--answers
+        .popup__beginner--answers, .popup__average--answers, .popup__advanced--answers
             width: 70%
 
 @media (max-width: 700px)
-    .popup__beginner--question, .popup__average--question
-        .popup__beginner__title--question, .popup__average__title--question
+    .popup__beginner--question, .popup__average--question, .popup__advanced--question
+        .popup__beginner__title--question, .popup__average__title--question, .popup__advanced__title--question
             font-size: 12px
 
 input[type="radio"]:checked:before 
