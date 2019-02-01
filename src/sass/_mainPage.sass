@@ -150,6 +150,40 @@
 .unActive
     display: none
 
+.main__get--certificate
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 15px
+    width: 80px
+    height: 28px
+    width: 190px
+    display: none
+    outline: none
+    border: none
+    background-color: $orange
+    font-size: 18px
+    font-weight: 600
+    color: white
+    cursor: pointer
+    &:hover
+        background-color: Transparent
+        border: 2px solid $orange
+        color: $orange
+
+.main__certificate
+    display: none
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    .main__certificate--name
+        position: absolute
+        top: 170px
+        left: 50%
+        transform: translateX(-50%)
+
+
 @media (min-width: 720px)
     .main__page--wrapper
         margin-top: 30px
@@ -159,4 +193,6 @@
             padding-right: 36px
     .change__avatar
         margin-top: 28px
+
+
 

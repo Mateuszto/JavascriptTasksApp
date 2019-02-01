@@ -193,3 +193,17 @@ if (localStorage.hasOwnProperty('resultAverage')) {} else {
 if (localStorage.hasOwnProperty('resultAdvanced')) {} else {
     resultAdvanced.textContent = `0%`;
 }
+
+//Certificate
+const buttonCertificate = document.querySelector('.main__get--certificate');
+
+if(localStorage.getItem('resultAdvanced') >= 60 && localStorage.getItem('resultAverage') >= 60 &&localStorage.getItem('resultBeginner') >= 80){
+    buttonCertificate.classList.add('activePopup');
+}
+
+buttonCertificate.addEventListener('click', function(){
+    const certificate = document.querySelector('.main__certificate');
+    const name = document.querySelector('.main__certificate--name');
+    name.textContent = localStorage.getItem('name');
+    certificate.classList.toggle('activePopup');
+})
