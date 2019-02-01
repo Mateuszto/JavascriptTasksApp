@@ -93,6 +93,7 @@ const showTasksAverage = () => {
 averageSection.addEventListener('click', showTasksAverage);
 
 //Quiz section
+//Beginner
 const checkQuestions = document.querySelector('.popup__beginner--form');
 const resultBeginner = document.querySelector('.progress__procent--beginner');
 let progressProcent = 0;
@@ -118,3 +119,30 @@ if (localStorage.getItem('resultBeginner') >= 80) {
 }
 resultBeginner.textContent = `${localStorage.getItem('resultBeginner')}%`;
 checkQuestions.addEventListener('submit', checkQuestionsFunction);
+
+//Average
+const checkQuestionsAverage = document.querySelector('.popup__average--form');
+const resultAverage = document.querySelector('.progress__procent--average');
+let progressProcentAverage = 0;
+
+const checkQuestionsFunctionAverage = () => {
+    const popupAverage = document.querySelector('.popup__average');
+    const correctAnswers = document.querySelectorAll('.correct');
+    const correctAnswersArray = [...correctAnswers]
+
+    for (let i = 0; i < correctAnswersArray.length; i++) {
+        if (correctAnswersArray[i].checked) {
+            progressProcentAverage += 20;
+        }
+    }
+    localStorage.setItem('resultAverage', progressProcentAverage);
+    resultAverage.textContent = `${localStorage.getItem('resultAverage')}%`;
+    popupAverage.classList.remove('activePopup');
+}
+if (localStorage.getItem('resultAverage') >= 60) {
+    resultAverage.style.color = "green";
+} else {
+    resultAverage.style.color = "red";
+}
+resultAverage.textContent = `${localStorage.getItem('resultAverage')}%`;
+checkQuestionsAverage.addEventListener('submit', checkQuestionsFunctionAverage);

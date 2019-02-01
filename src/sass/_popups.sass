@@ -24,7 +24,7 @@
         transform: translateX(-50%)
         &:hover
             background-color: #ff5100
-    .popup__beginner--question
+    .popup__beginner--question, .popup__average--question
         margin-top: 42px
         position: relative
         width: 100%
@@ -32,11 +32,11 @@
         color: white
         display: flex
         align-items: center
-        .popup__beginner__title--question
+        .popup__beginner__title--question, .popup__average__title--question
             position: absolute
             left: 50%
             transform: translateX(-50%)
-.popup__beginner--answers
+.popup__beginner--answers, .popup__average--answers
     position: absolute
     top: 46px
     left: 50%
@@ -68,12 +68,12 @@
     .popup__beginner, .popup__average
         height: 620px
         width: 700px
-        .popup__beginner--answers
+        .popup__beginner--answers, .popup__average--answers
             width: 70%
 
 @media (max-width: 700px)
-    .popup__beginner--question
-        .popup__beginner__title--question
+    .popup__beginner--question, .popup__average--question
+        .popup__beginner__title--question, .popup__average__title--question
             font-size: 12px
 
 input[type="radio"]:checked:before 
