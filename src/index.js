@@ -102,6 +102,8 @@ const showTasksAdvanced = () => {
 advancedSection.addEventListener('click', showTasksAdvanced);
 
 //Quiz section
+const correctAnswers = document.querySelectorAll('.correct');
+const correctAnswersArray = [...correctAnswers]
 //Beginner
 const checkQuestions = document.querySelector('.popup__beginner--form');
 const resultBeginner = document.querySelector('.progress__procent--beginner');
@@ -109,8 +111,6 @@ let progressProcent = 0;
 
 const checkQuestionsFunction = () => {
     const popupBeginner = document.querySelector('.popup__beginner');
-    const correctAnswers = document.querySelectorAll('.correct');
-    const correctAnswersArray = [...correctAnswers]
 
     for (let i = 0; i < correctAnswersArray.length; i++) {
         if (correctAnswersArray[i].checked) {
@@ -136,8 +136,6 @@ let progressProcentAverage = 0;
 
 const checkQuestionsFunctionAverage = () => {
     const popupAverage = document.querySelector('.popup__average');
-    const correctAnswers = document.querySelectorAll('.correct');
-    const correctAnswersArray = [...correctAnswers]
 
     for (let i = 0; i < correctAnswersArray.length; i++) {
         if (correctAnswersArray[i].checked) {
@@ -163,8 +161,6 @@ let progressProcentAdvanced = 0;
 
 const checkQuestionsFunctionAdvanced = () => {
     const popupAdvanced = document.querySelector('.popup__advanced');
-    const correctAnswers = document.querySelectorAll('.correct');
-    const correctAnswersArray = [...correctAnswers]
 
     for (let i = 0; i < correctAnswersArray.length; i++) {
         if (correctAnswersArray[i].checked) {
