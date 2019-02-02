@@ -203,3 +203,4 @@ buttonCertificate.addEventListener('click', function () {
     name.textContent = localStorage.getItem('name');
     certificate.classList.toggle('activePopup');
 })
+
