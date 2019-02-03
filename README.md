@@ -23,7 +23,7 @@
   ✅ Save nickname  
     ✅ Choose and save avatar  
       ✅ Notebook  
-        ⬜️ Progress bar  
+        ❌ Progress bar  
           ✅ Window with questions  
             ⬜️ Support window  
               ✅ Certificate
