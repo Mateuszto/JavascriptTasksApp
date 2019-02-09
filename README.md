@@ -25,7 +25,7 @@
       ✅ Notebook  
         ❌ Progress bar  
           ✅ Window with questions  
-            ⬜️ Support window  
+            ❌ Support window  
               ✅ Certificate
                 ✅ Logic - Fix some bugs
 
