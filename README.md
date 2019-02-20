@@ -26,7 +26,7 @@
         ❌ Progress bar  
           ✅ Window with questions  
             ❌ Support window  
-              ✅ Certificate
+              ✅ Certificate  
                 ✅ Logic - Fix some bugs
 
 
