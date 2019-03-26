@@ -4,8 +4,8 @@ const sectionWelcome = document.querySelector('.welcome__page');
 const welcomeInput = document.querySelector('.welcome__page--input');
 const welcomeForm = document.querySelector('.welcome__page--form');
 
-let nickName = welcomeInput.value;
-let showNick = document.querySelector('.main__page--nick');
+const nickName = welcomeInput.value;
+const showNick = document.querySelector('.main__page--nick');
 
 
 if (localStorage.hasOwnProperty('name')) {
@@ -203,4 +203,3 @@ buttonCertificate.addEventListener('click', function () {
     name.textContent = localStorage.getItem('name');
     certificate.classList.toggle('activePopup');
 })
-
