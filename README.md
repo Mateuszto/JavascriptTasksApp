@@ -1,8 +1,6 @@
 <h1 align="center">👇 Javascript Tasks 👇</h1>
 <p align="center">📚 For beginners 📚</p>
-<p align="center">(｡◕‿‿◕｡)</p>
-
-**January 2019**
+<h6 align="center"> January 2019 </h6>
 
 # **Todo**
 
