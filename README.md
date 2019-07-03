@@ -8,30 +8,30 @@
 
 ## 🌃 **Design**
 
-✅ PSD Project  
-  ✅ Code first page  
-    ✅ Code main page  
-      ✅ Responsive Task-Quiz  
+###### ✅PSD Project  
+###### ✅ Code first page  
+###### ✅ Code main page  
+###### ✅ Responsive Task-Quiz  
    
 ## 🌆 **Content**
 
-✅ Tasks - Levels  
-  ✅ All questions
+###### ✅ Tasks - Levels  
+###### ✅ All questions
   
 ## ⚒ **Features**
-✅ Local Storages  
-  ✅ Save nickname  
-    ✅ Choose and save avatar  
-      ✅ Notebook  
-        ❌ Progress bar  
-          ✅ Window with questions  
-            ❌  Support window  
-              ✅ Certificate  
-                ✅ Logic - Fix some bugs
+###### ✅ Local Storages  
+###### ✅ Save nickname  
+###### ✅ Choose and save avatar  
+###### ✅ Notebook  
+###### ❌ Progress bar  
+###### ✅ Window with questions  
+###### ❌  Support window  
+###### ✅ Certificate  
+###### ✅ Logic - Fix some bugs
 
 
 
-# 💾 **Tech**
+## 💾 **Tech**
 * **Javascript**
 * **HTML5**
 * **Sass**
