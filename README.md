@@ -60,4 +60,10 @@ $ npm run dev
 ```sh
 http://localhost:8080/
 ```
+  
+  
+##### Contact
+```
+mateusz@mateuszt.pl
+```
 
